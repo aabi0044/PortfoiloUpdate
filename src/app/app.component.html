@@ -1,12 +1,11 @@
-<div class="preloader">
-  <div class="loading-overlay">
-      <div class="loading-inner">
-          <span></span>
-          <span></span>
-      </div>
-      <!--End loading-inner-->
+
+<div class="page-loader" id="page-loader">
+  <div>
+      <div class="icon ion-spin"></div>
+      <p>loading</p>
   </div>
-  <!--End loading-overlay-->
 </div>
-<!--End div preloader-->
-<router-outlet></router-outlet>
+<!-- ==============================================-->
+  <app-nav></app-nav>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
