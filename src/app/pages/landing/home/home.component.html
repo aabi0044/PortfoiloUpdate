@@ -127,14 +127,12 @@
                                         </div>
                                         <div class="legend text-center pos-abs">
                                             <h5>Khushboo Hussain</h5>
-                                            <p class="small">CEO / Marketing Director</p>
+                                            <p class="small">C.E.O </p>
                                             <div class="icons">
-                                                <a class="icon-btn" href="https://www.instagram.com/khushboo.hussain/" target="_blank">
-                          <i class="icon fa fa-instagram"></i>
-                        </a>
-                                                <a class="icon-btn" href="https://www.facebook.com/khushboo.hussain777/" target="_blank">
-                          <i class="icon fa fa-facebook"></i>
-                        </a>
+                                               
+                        <a class="icon-btn" href="https://www.linkedin.com/in/khushboo-hussain-b77199108/" target="_blank">
+                            <i class="icon fa fa-linkedin"></i>
+                          </a>
                                             </div>
                                         </div>
                                     </div>
@@ -155,9 +153,7 @@
                                             <h5>Junaid Hassan</h5>
                                             <p class="small">Co-Founder / Full Stack Developer</p>
                                             <div class="icons">
-                                                <a class="icon-btn" href="https://www.instagram.com/junaid.play/" target="_blank">
-                          <i class="icon fa fa-instagram"></i>
-                        </a>
+                                              
                                                 <a class="icon-btn" href="https://www.facebook.com/junaid.play/" target="_blank">
                           <i class="icon fa fa-facebook"></i>
                         </a>
@@ -184,12 +180,7 @@
                                             <h5>Saad Anjum</h5>
                                             <p class="small">Designer / Developer</p>
                                             <div class="icons">
-                                                <a class="icon-btn" href="https://www.instagram.com/saadanjum9/" target="_blank">
-                          <i class="icon fa fa-instagram"></i>
-                        </a>
-                                                <a class="icon-btn" href="https://www.facebook.com/saad.anjum.33449/" target="_blank">
-                          <i class="icon fa fa-facebook"></i>
-                        </a>
+                                        
                                             </div>
                                         </div>
                                     </div>
@@ -575,7 +566,7 @@
                                             <div class="col-12 col-md-12 col-lg-6">
                                                 <h4>Address</h4>
                                                 <p>
-                                                    Apt. 407, Falcon Mall
+                                                    Office 407, Falcon Mall
                                                     <br>Plaza 34, Block A
                                                     <br>Civic Center, Phase 4 Bahria Town (46220),
                                                     <br>Rawalpindi, Pakistan
@@ -616,7 +607,7 @@
                                     <div>
                                         <h5>Customer Service</h5>
                                         <h2 class="display-4 display-title">Email Us</h2>
-                                        <p>For questions about our company and products found on our stores. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.</p>
+                                        <p>For questions about our company and products found on our stores.</p>
                                     </div>
                                 </div>
 
@@ -636,18 +627,18 @@
                                 <div class="">
                                     <div class="form-container form-container-card">
                                         <!-- Message form container -->
-                                        <form class="send_message_form message form" method="post" action="ajaxserver/serverfile.php" id="message_form">
+                                        <form class="send_message_form message form" id="message_form"  >
                                             <div class="form-group name">
                                                 <label for="mes-name">Name :</label>
-                                                <input id="mes-name" name="name" type="text" placeholder="" class="form-control-line form-success-clean" required>
+                                                <input id="mes-name" name="name" [(ngModel)]="name" type="text" placeholder="" class="form-control-line form-success-clean" required>
                                             </div>
                                             <div class="form-group email">
                                                 <label for="mes-email">Email :</label>
-                                                <input id="mes-email" type="email" placeholder="" name="email" class="form-control-line form-success-clean" required>
+                                                <input id="mes-email" type="email" [(ngModel)]="email" placeholder="" name="email" class="form-control-line form-success-clean" required>
                                             </div>
                                             <div class="form-group no-border">
                                                 <label for="mes-text">Message</label>
-                                                <textarea id="mes-text" placeholder="..." name="message" class="form-control form-control-outline thick form-success-clean" required></textarea>
+                                                <textarea id="mes-text" placeholder="..." [(ngModel)]="message" name="message" class="form-control form-control-outline thick form-success-clean" required></textarea>
 
                                                 <div>
                                                     <p class="message-ok invisible form-text-feedback form-success-visible">Your message has been sent, thank you.</p>
@@ -655,7 +646,7 @@
                                             </div>
 
                                             <div class="btns">
-                                                <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b" name="submit_message" >
+                                                <button id="submit-message" class="btn btn-normal btn-white btn-round btn-full email_b" name="submit_message" (click)="send()"  >
                           <span class="txt">Send</span>
                           <span class="arrow-icon"></span>
                         </button>
